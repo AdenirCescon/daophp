@@ -8,8 +8,8 @@ require_once("config.php");
 //echo $root;
 
 //Carrega uma lista de usuários
-//$lista = Usuario::getList();
-//echo json_encode($lista);
+$lista = Usuario::getList();
+echo json_encode($lista);
 
 //Carrega uma lista de usuários buscando pelo login
 //$search = Usuario::search("jo");
@@ -37,11 +37,11 @@ $usuario->update("professor", "!@#$%¨&*");
 echo $usuario;
 */
 
-$usuario = new Usuario();
+//$usuario = new Usuario();
 
-$usuario->loadById(7);
+//$usuario->loadById(2);
 
-$usuario->delete();
+//$usuario->delete();
 
-echo $usuario;
+//echo $usuario;
  ?>
